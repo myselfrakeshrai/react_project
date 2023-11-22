@@ -1,25 +1,48 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
 
-function App() {
+const AboutJohn = (props) => {
+  const firstName = props.name;
+  const lastName = props.lastName;
+  const age = props.age;
+  const address = props.address;
+
+  return (
+    <>
+      <h3>First Name: {firstName}</h3>
+      <h3>Last Name : {lastName}</h3>
+      <h3>Age : {age}</h3>
+      <h3>Address : {address}</h3>
+    </>
+  );
+};
+
+const Counter = () => {
+  const [counter, setCounter] = useState(0);
+  return (
+    <>
+      <button onClick={()=> setCounter((prevCount)=>prevCount -1)}>-</button>
+        <h1>{counter}</h1>
+      <button onClick={() => setCounter((addCount)=>addCount +1)}>+</button>
+    </>
+  )
+}
+
+const App = () => {
+  const name = "Rakesh Rai";
+  const isName = true;
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Counter/>
+      <h1>Hi! I'm {isName ? name : "there is no name"}</h1>
+      <AboutJohn
+        name={"Rakesh"}
+        LastName={"Rai"}
+        age={2 + 2}
+        address={"Dharan"}
+      />
     </div>
   );
-}
+};
 
 export default App;
