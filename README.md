@@ -1,4 +1,4 @@
-[Crea![screencapture-localhost-3000-2023-11-23-14_36_27](https://github.com/myselfrakeshrai/react_project/assets/36762135/1ad39977-84ce-49a0-8fc3-f6d7b61b99a1)
+[screencapture-localhost-3000-2023-11-23-14_36_27](https://github.com/myselfrakeshrai/react_project/assets/36762135/1ad39977-84ce-49a0-8fc3-f6d7b61b99a1)
 
 # Getting Started with Create React App
 
